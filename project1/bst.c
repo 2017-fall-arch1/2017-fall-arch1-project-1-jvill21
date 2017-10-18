@@ -13,14 +13,6 @@ bstNode *newNode(char *name) {
   return newNode;
   }
 
-/*bstNode *newNode() {
-  bstNode *newNode = (bstNode *)malloc(sizeof(bstNode));
-  newNode->name = NULL;
-  newNode->left = NULL;
-  newNode->right = NULL;
-  return newNode;
-  }*/
-
 
 /* insert a new node into the tree */
 bstNode* insert(bstNode* root, char *name) {
@@ -85,9 +77,9 @@ bstNode* delete(bstNode* root, char *name) {
 /*  create the tree from the given text file */
 bstNode *createTree(bstNode *root) {
   
-  FILE *file = fopen("names.txt", "r");
+  FILE *file = fopen("employees.txt", "r");
 
-  char name[45];
+  char name[45]; // who has a name longer than 45 characters...
   while (fgets(name, 45, file)) {
     name[strlen(name) - 1] = '\0';
       if (root == NULL) {
@@ -123,9 +115,9 @@ void inOrderPrint(bstNode *root) {
 void userMenu() {
   printf("\nWelcome to the ACME Solutions Personal Management System!\n");
   printf("Please select the function you wish to perform:\n");
-  printf("1) View list of current employees...\n");
-  printf("2) Add a new employee to the system...\n");
-  printf("3) Remove an employee from the system...\n");
-  printf("4) Exit the system...\n");
+  printf("1) View list of current employees\n");
+  printf("2) Add a new employee to the system\n");
+  printf("3) Remove an employee from the system\n");
+  printf("4) Exit the system\n");
   
 }

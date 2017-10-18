@@ -43,32 +43,3 @@ int main() {
   printf("Session Terminated\n");
   return 0;
 }
-
-
-  /*  int input = 0;
-  while (input != 4) {
-    userMenu();
-    scanf("%i", &input);
-    if (input == 1) {
-      printf("\n The current list of names:\n");
-      inOrderPrint(root);
-    }
-    else if (input == 2) {
-      printf("Please enter a name to add to the system: ");
-      char name[25];
-      scanf("%s", name);
-      addName(name);
-      insert(root, name);
-      printf("%s has been added to the system...\n\n", name);
-    }
-    else if (input == 3) {
-      printf("Please enter a name to delete from the system: ");
-      char name[25];
-      scanf("%s", name);
-      delete(root, name);
-      printf("%s has been removed from the system\n\n", name);
-    }
-    
-  }
-  printf("\nExiting the System... \nThank you! Have a nice day!\n\n");
-  return 0;*/
