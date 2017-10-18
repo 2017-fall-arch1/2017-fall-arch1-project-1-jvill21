@@ -45,7 +45,6 @@ void llPut(LList *lp, char *s)
   int len;
   char *scopy;
   LLItem *i;
-
   doCheck(lp);
   /* w = freshly allocated copy of putWord */
   for (len = 0; s[len]; len++) /* compute length */
