@@ -19,7 +19,7 @@ To delete binaries:
 
 Outside Help:
  I did use some outside resources besides the lab manual in order to help
- with the node deletion part of this project. These sources include youtube
- videos as well as online forums. Although I did not copy code from these places,
- I did use some of the ideas and logic in my implementations.
+ with the node deletion part of this project. I looked at psuedocode from different 
+ youtube videos as well as data structure lectures from other universities to help
+ get a better understanding of how to remove a node from a binary search tree.
  
